@@ -1,0 +1,59 @@
+/* =========== GallinApp: colores alegres de granja =========== */
+/* Fondo crema con puntitos */
+body { background: #fdf8ec radial-gradient(#f0e2bb 1.2px, transparent 1.2px) 0 0 / 22px 22px; }
+
+/* ---- Menú (a la izquierda en computadora) ---- */
+.menu { background: linear-gradient(180deg, #15803d, #14532d); }
+.menu .logo { width: 90px; height: 90px; object-fit: cover; border-radius: 50%; border: 4px solid #facc15; }
+.menu a { display: block; color: white; text-decoration: none; padding: 11px 16px; border-radius: 12px; margin-bottom: 6px; }
+.menu a:hover { background: rgba(255, 255, 255, 0.15); }
+.menu a.activo { background: #facc15; color: #422006; font-weight: bold; }
+.menu .rol { background: #facc15; color: #422006; }
+@media (min-width: 768px) {
+  .menu { width: 240px; min-height: 100vh; }
+}
+
+/* ---- Diseño adaptable: en celular el menú va arriba, en una fila ---- */
+@media (max-width: 767px) {
+  .menu a { display: inline-block; padding: 8px 12px; margin: 2px; }
+  .menu .logo { width: 56px; height: 56px; }
+  .menu hr { display: none; }
+  .cabecera { padding: 18px; }
+}
+
+/* ---- Cabecera verde de cada página ---- */
+.cabecera { background: linear-gradient(135deg, #15803d, #65a30d); color: white; border-radius: 20px; padding: 24px 28px; margin-bottom: 24px; box-shadow: 0 10px 25px rgba(21, 128, 61, 0.25); }
+.cabecera img { width: 260px; height: 130px; object-fit: cover; border-radius: 16px; border: 4px solid rgba(255, 255, 255, 0.7); }
+
+/* ---- Tarjetas de colores del panel ---- */
+.tarjeta { color: white; border-radius: 18px; padding: 20px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); transition: transform 0.2s; }
+.tarjeta:hover { transform: translateY(-4px); }
+.tarjeta .icono { font-size: 2.2rem; }
+.amarillo { background: linear-gradient(135deg, #f59e0b, #ea580c); }
+.rojo     { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+.azul     { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.verde    { background: linear-gradient(135deg, #22c55e, #15803d); }
+
+/* ---- Cajas blancas (formularios y tablas) ---- */
+.caja { background: white; border-radius: 18px; padding: 22px; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07); }
+.caja-form { border-top: 6px solid #facc15; }
+.table thead th { background-color: #15803d; color: white; }
+.filtros { padding: 14px 18px; }
+
+/* ---- Botones y campos ---- */
+.btn { border-radius: 10px; }
+.btn-success { background: linear-gradient(135deg, #22c55e, #15803d); border: 0; }
+.btn-success:hover { background: linear-gradient(135deg, #16a34a, #14532d); }
+.form-control:focus, .form-select:focus { border-color: #22c55e; box-shadow: 0 0 0 0.25rem rgba(34, 197, 94, 0.25); }
+.input-group-text { background: #fef9c3; }
+
+/* ---- Login y Crear cuenta ---- */
+.login-foto    { background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.75)), url('../images/pollitos.jpg') center / cover; }
+.registro-foto { background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.75)), url('../images/gallinas-galpon.jpg') center / cover; }
+.caja-login { width: 100%; max-width: 400px; }
+.logo-login { width: 100px; height: 100px; object-fit: cover; border-radius: 50%; border: 4px solid #facc15; }
+.chip { display: inline-block; background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.6); border-radius: 50px; padding: 6px 14px; margin: 4px 4px 0 0; }
+.ejemplo { background: #fef9c3; border: 2px dashed #facc15; border-radius: 12px; padding: 10px 14px; }
+
+/* ---- Pie de página ---- */
+.pie { color: #8a7a55; }
